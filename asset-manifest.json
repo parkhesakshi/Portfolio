@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.db04ed44.css",
+    "main.js": "/Portfolio/static/js/main.37e3b405.js",
+    "static/media/Sakshi.png": "/Portfolio/static/media/Sakshi.2016bebfc2f2518472b5.png",
+    "static/media/sakshi_blazor.png": "/Portfolio/static/media/sakshi_blazor.126394b600ee938fa860.png",
+    "static/media/sakshi_parkhe.pdf": "/Portfolio/static/media/sakshi_parkhe.f8e3ae3826447f7ad61a.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.db04ed44.css.map": "/Portfolio/static/css/main.db04ed44.css.map",
+    "main.37e3b405.js.map": "/Portfolio/static/js/main.37e3b405.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db04ed44.css",
+    "static/js/main.37e3b405.js"
+  ]
+}
