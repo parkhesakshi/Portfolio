@@ -1,39 +1,41 @@
-@use '../../ui//variable' as v;
-
+@use "../../ui//variable" as v;
 
 #navbar-section {
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 8px;
-    width: 40%;
-    height: 50px;
-    background-color: rgba($color: v.$bg-color, $alpha: .36);
-    backdrop-filter: blur(11px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, .3);
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  width: 40%;
+  height: 50px;
+  background-color: rgba($color: v.$black-color, $alpha: 0.25);
+  backdrop-filter: blur(11px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
 
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+  .navbar-item {
+    padding: 10px 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+
+    p {
+      color: v.$white-color;
+    }
     @media only screen and (max-width: 768px) {
-        width: 100%;
+      font-size: 0.8rem;
     }
 
-    .navbar-item {
-        padding: 10px 10px;
-        border-radius: 6px;
-        transition: all .3s ease-in-out;
-
-        @media only screen and (max-width: 768px) {
-            font-size: .8rem;
-        }
-
-        &:hover {
-            cursor: pointer;
-            background-color: rgba($color: v.$white-color, $alpha: .2);
-        }
+    &:hover {
+      cursor: pointer;
+      background-color: rgba($color: v.$white-color, $alpha: 0.2);
     }
+  }
 }

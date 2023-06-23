@@ -1,0 +1,117 @@
+@use "../../ui/variable" as v;
+
+#education-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .education-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .education-item-card {
+      display: flex;
+      flex-direction: column;
+      width: 22rem;
+      height: 20rem;
+      background-color: rgba($color: v.$voilet-color, $alpha: 1);
+      backdrop-filter: blur(11px);
+      padding: 8px;
+      border-radius: 12px;
+      position: relative;
+      z-index: 9999;
+
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 30px;
+        width: 90%;
+      }
+
+      //   &::after {
+      //     content: "";
+      //     position: absolute;
+      //     top: 0;
+      //     right: 0;
+      //     width: 300px;
+      //     height: 300px;
+      //     background-color: rgba($color: v.$color-1, $alpha: 1);
+      //     border-radius: 50%;
+      //     z-index: -1;
+      //   }
+      .institute-img {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        border-radius: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.5s ease-in;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .result {
+        position: absolute;
+        padding: 10px;
+        background: v.$grad-2;
+        border-radius: 10px;
+        bottom: -10px;
+        right: -20px;
+        width: 13rem;
+        text-align: center;
+
+        @media only screen and (max-width: 768px) {
+          right: 50%;
+          transform: translateX(50%);
+        }
+        p {
+          color: v.$white-color;
+          font-weight: 800;
+        }
+      }
+      .academic-year {
+        position: absolute;
+        padding: 10px;
+        background: v.$grad-2;
+        border-radius: 50%;
+        top: -20px;
+        left: -20px;
+        width: 5rem;
+        height: 5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+        color: v.$white-color;
+        font-weight: 800;
+        font-size: 0.9rem;
+      }
+
+      .education {
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 800;
+        margin: 10px;
+      }
+
+      .institute {
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-align: center;
+        color: v.$grey-color;
+      }
+    }
+  }
+}

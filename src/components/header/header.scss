@@ -1,115 +1,155 @@
-@use '../../ui//variable' as v;
+@use "../../ui//variable" as v;
 
 #header-section {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0px 0px 30% 0px;
+  box-shadow: 5px 5px 10px rgba($color: v.$black-color, $alpha: 0.5);
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    border-radius: 0;
+  }
+
+  .header-eclipse {
+    width: 100%;
+    height: 200px;
+    filter: contrast(210%) blur(40px);
+    top: -153px;
+    mix-blend-mode: normal;
+    background-image: v.$grad-1;
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    border-radius: 0px 0px 30% 0px;
-    box-shadow: 5px 5px 20px rgba($color: v.$white-color, $alpha: 0.5);
-    overflow: hidden;
+    padding: 0px 50px;
 
     @media only screen and (max-width: 768px) {
-        border-radius: 0;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      margin-top: -40px;
     }
 
-    .header-eclipse {
-        width: 100%;
-        height: 200px;
-        filter: contrast(210%) blur(40px);
-        top: -153px;
-        mix-blend-mode: normal;
-        background-image: v.$grad-1;
-        border-radius: 100%;
-        position: absolute;
-    }
+    .header-left {
+      flex-basis: 55%;
 
-    .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        padding: 0px 50px;
+      @media only screen and (max-width: 768px) {
+        flex-basis: 40%;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        color: v.$black-color;
 
         @media only screen and (max-width: 768px) {
-            flex-direction: column-reverse;
-            
+          text-align: center;
+          font-size: 2.2rem;
         }
-
-        .header-left {
-            flex-basis: 60%;
-            
-            h1 {
-                font-size: 3rem;
-                font-weight: 800;
-                line-height: 1.2;
-                margin-bottom: 1rem;
-                color: v.$white-color;
-                
-                @media only screen and (max-width: 768px) {
-                    text-align: center;
-                }
-                span {
-                    text-shadow: none;
-                    -webkit-text-fill-color: transparent;
-                    background-image: linear-gradient(#fff, #ffb1da 21%, #ff5bb3 48%, #7100ff 77%, #000);
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-                }
-            }
-
-            h2 {
-                font-size: 2rem;
-                font-weight: 600;
-                line-height: 1.2;
-                margin: 2rem 0px;
-                color: v.$white-color;
-                @media only screen and (max-width: 768px) {
-                    text-align: center;
-                    font-size: 1.5rem;
-                }
-            }
-
-            .cv_btn {
-                color: #fff;
-                text-shadow: 0 2px rgba(0, 0, 0, .11);
-                background-color: rgba(0, 0, 0, 0);
-                background-image: v.$grad-2;
-                border-radius: 8px;
-                padding: 20px 32px;
-                font-family: Satoshi, sans-serif;
-                font-size: 1.2em;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all .2s;
-                display: flex;
-                position: relative;
-                box-shadow: 0 19px 20px -18px rgba(0, 0, 0, .46), inset 0 1px rgba(255, 255, 255, .63);
-                width: fit-content;
-                @media only screen and (max-width: 768px) {
-                    margin: auto auto 0px auto;
-                }
-            }
+        span {
+          text-shadow: none;
+          -webkit-text-fill-color: transparent;
+          background-image: linear-gradient(
+            #fff,
+            #ffb1da 21%,
+            #ff5bb3 48%,
+            #7100ff 77%,
+            #000
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
         }
+      }
 
-        .header-right {
-            flex-basis: 40%;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-
-            img {
-                width: 100%;
-                height: 90%;
-                object-fit: contain;
-                z-index: 10;
-                @media only screen and (max-width: 768px) {
-                    height: 70%;
-                    margin-bottom: 10px;
-                }
-            }
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 1rem 0px;
+        color: v.$black-color;
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+          font-size: 1.3rem;
         }
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+
+      .cv_btn {
+        color: #fff;
+        text-shadow: 0 2px rgba(0, 0, 0, 0.11);
+        background-color: rgba(0, 0, 0, 0);
+        background-image: v.$grad-2;
+        border-radius: 8px;
+        padding: 20px 32px;
+        font-family: Satoshi, sans-serif;
+        font-size: 1.2em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: flex;
+        position: relative;
+        box-shadow: 0 19px 20px -18px rgba(0, 0, 0, 0.46),
+          inset 0 1px rgba(255, 255, 255, 0.63);
+        width: fit-content;
+        @media only screen and (max-width: 768px) {
+          margin: auto auto 30px auto;
+        }
+      }
     }
+
+    .header-right {
+      flex-basis: 40%;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-basis: 45%;
+      @media only screen and (max-width: 768px) {
+        flex-basis: 60%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+      }
+
+      .header-right-img {
+        height: 80%;
+        width: 70%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        // border-radius: 0px 0px 150px 150px;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          height: 450px;
+          object-fit: contain;
+          z-index: 10;
+          margin-bottom: -10px;
+          @media only screen and (max-width: 768px) {
+            height: 60%;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
 }
