@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.db04ed44.css",
-    "main.js": "/Portfolio/static/js/main.37e3b405.js",
-    "static/media/Sakshi.png": "/Portfolio/static/media/Sakshi.2016bebfc2f2518472b5.png",
-    "static/media/sakshi_blazor.png": "/Portfolio/static/media/sakshi_blazor.126394b600ee938fa860.png",
+    "main.css": "/Portfolio/static/css/main.51220b59.css",
+    "main.js": "/Portfolio/static/js/main.100dcd78.js",
     "static/media/sakshi_parkhe.pdf": "/Portfolio/static/media/sakshi_parkhe.f8e3ae3826447f7ad61a.pdf",
+    "static/media/Sakshi.webp": "/Portfolio/static/media/Sakshi.14e19240d1df1bd7068c.webp",
+    "static/media/Sakshi_Blazor.webp": "/Portfolio/static/media/Sakshi_Blazor.e221652bb1dc91556823.webp",
     "index.html": "/Portfolio/index.html",
-    "main.db04ed44.css.map": "/Portfolio/static/css/main.db04ed44.css.map",
-    "main.37e3b405.js.map": "/Portfolio/static/js/main.37e3b405.js.map"
+    "main.51220b59.css.map": "/Portfolio/static/css/main.51220b59.css.map",
+    "main.100dcd78.js.map": "/Portfolio/static/js/main.100dcd78.js.map"
   },
   "entrypoints": [
-    "static/css/main.db04ed44.css",
-    "static/js/main.37e3b405.js"
+    "static/css/main.51220b59.css",
+    "static/js/main.100dcd78.js"
   ]
 }
