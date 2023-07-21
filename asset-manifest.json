@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2ac0beae.css",
-    "main.js": "/Portfolio/static/js/main.35748c95.js",
-    "static/media/sakshi_parkhe.pdf": "/Portfolio/static/media/sakshi_parkhe.0f79ac50ff3b6d26748c.pdf",
+    "main.js": "/Portfolio/static/js/main.482de571.js",
+    "static/media/sakshi_parkhe.pdf": "/Portfolio/static/media/sakshi_parkhe.dea6f0d87a9bb8047ffa.pdf",
     "static/media/Sakshi.webp": "/Portfolio/static/media/Sakshi.14e19240d1df1bd7068c.webp",
     "static/media/Sakshi_Blazor.webp": "/Portfolio/static/media/Sakshi_Blazor.e221652bb1dc91556823.webp",
     "index.html": "/Portfolio/index.html",
     "main.2ac0beae.css.map": "/Portfolio/static/css/main.2ac0beae.css.map",
-    "main.35748c95.js.map": "/Portfolio/static/js/main.35748c95.js.map"
+    "main.482de571.js.map": "/Portfolio/static/js/main.482de571.js.map"
   },
   "entrypoints": [
     "static/css/main.2ac0beae.css",
-    "static/js/main.35748c95.js"
+    "static/js/main.482de571.js"
   ]
 }
